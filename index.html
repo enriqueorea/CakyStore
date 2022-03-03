@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Caky Store</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="" class="logo"> <i class="fas fa-birthday-cake"></i>Dark Cakery </a>
+      <nav class="navbar">
+        <a href="#home">inicio</a>
+        <a href="#about">Nosotros</a>
+        <a href="#cakes">pasteles</a>
+        <a href="#gallery">galería</a>
+        <a href="#order">ordenar</a>
+      </nav>
+      <button type="button" id="menu-btn" class="fas fa-bars"></button>
+    </header>
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div class="slide slide-1 swiper-slide">
+            <div class="content">
+              <span>pasteles fuera de lo comun</span>
+              <h3>un toque dulce a tu vida</h3>
+              <a class="btn" href="#cakes">nuestro menu</a>
+            </div>
+          </div>
+          <div class="slide slide-2 swiper-slide">
+            <div class="content">
+              <span>pasteles fuera de lo comun</span>
+              <h3>deliciosos pasteles</h3>
+              <a class="btn" href="#order">ordena ahora</a>
+            </div>
+          </div>
+          <div class="slide slide-3 swiper-slide">
+            <div class="content">
+              <span>pasteles fuera de lo comun</span>
+              <h3>listos para disfrutar</h3>
+              <a class="btn" href="#gallery">galería</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="swiper-button-next"></button>
+      <button class="swiper-button-prev"></button>
+    </section>
+    <section class="about" id="about">
+      <div class="image">
+        <img src="./images/about.jpeg" alt="sobre nostros" />
+      </div>
+      <div class="content">
+        <h3 class="title">bienvenidos a nuestra pasteleria</h3>
+        <p>
+          En Caky Store, no importa darle un sabor más dulce a los momentos que pasas acompañados con tus seres queridos, estamos comprometidos en brindarte un servicio de calidad es por ello que todos nuestros pasteles son hechos con productos frescos y preparados por reposteros profesionales, sin duda la mejor manera de endulzar un momento especial es a través de uno de nuestros pasteles.
+        </p>
+        <a href="#" class="btn">read more</a>
+        <div class="icons-container">
+          <div class="icons">
+            <i class="fas fa-birthday-cake"></i>         
+            <h3>cumpleaños</h3>
+          </div>
+          <div class="icons">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>eventos especiales</h3>
+          </div>
+          <div class="icons">
+            <i class="fas fa-cookie-bite"></i>
+            <h3>bocadillos</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cake" id="cakes">
+      <div class="heading">
+        <span>menu de pasteles</span>
+        <h3>nuestros deliciosos pasteles</h3>
+      </div>
+      <div class="swiper cake-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide" data-name="cake-1">
+            <img src="./images/pastel1.jpeg" alt="pastel" />
+            <h3>Pastel de calabaza</h3>
+            <p class="price">$49.99</p>
+          </div>
+          <div class="swiper-slide slide" data-name="cake-2">
+            <img src="./images/pastel2.jpeg" alt="pastel" />
+            <h3>pastel oreo</h3>
+            <p class="price">$44.99</p>
+          </div>
+          <div class="swiper-slide slide" data-name="cake-3">
+            <img src="./images/pastel3.jpeg" alt="pastel" />
+            <h3>pastel triple chocolate</h3>
+            <p class="price">$39.99</p>
+          </div>
+          <div class="swiper-slide slide" data-name="cake-4">
+            <img src="./images/pastel4.jpeg" alt="pastel" />
+            <h3>pay de queso & fresa</h3>
+            <p class="price">$59.99</p>
+          </div>
+          <div class="swiper-slide slide" data-name="cake-5">
+            <img src="./images/pastel5.jpeg" alt="pastel" />
+            <h3>pastel frutos rojos</h3>
+            <p class="price">$49.99</p>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+
+        </div>
+      </div>
+    </section>
+    <section class="cake-preview-container">
+      <button type="button"
+        class="fas fa-times"
+        id="close-preview"
+      ></button>
+      <div class="cake-preview active" data-target="cake-1">
+        <img src="./images/pastel1.jpeg" alt="pastel" />
+        <h3>
+          delicious cake
+        </h3>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quod?
+        </p>
+        <p class="price">
+          $49.99
+        </p>
+        <a href="#" class="btn">buy now</a>
+      </div>
+      <div class="cake-preview" data-target="cake-2">
+        <img src="./images/pastel2.jpeg" alt="pastel" />
+        <h3>
+          delicious cake
+        </h3>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quod?
+        </p>
+        <p class="price">
+          $49.99
+        </p>
+        <a href="#" class="btn">buy now</a>
+
+      </div>
+      <div class="cake-preview" data-target="cake-3">
+        <img src="./images/pastel3.jpeg" alt="pastel" />
+        <h3>
+          delicious cake
+        </h3>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quod?
+        </p>
+        <p class="price">
+          $49.99
+        </p>
+        <a href="#" class="btn">buy now</a>
+
+      </div>
+      <div class="cake-preview" data-target="cake-4">
+        <img src="./images/pastel4.jpeg" alt="pastel" />
+        <h3>
+          delicious cake
+        </h3>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quod?
+        </p>
+        <p class="price">
+          $49.99
+        </p>
+        <a href="#" class="btn">buy now</a>
+
+      </div>
+      <div class="cake-preview" data-target="cake-5">
+        <img src="./images/pastel5.jpeg" alt="pastel" />
+        <h3>
+          delicious cake
+        </h3>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quod?
+        </p>
+        <p class="price">
+          $49.99
+        </p>
+        <a href="#" class="btn">buy now</a>
+
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="heading">
+        <span>nuestro trabajo</span>
+        <h3>dulces historias</h3>
+      </div>
+      <div class="gallery-container">
+        <a href="./images/galeria1.jpeg" class="box">
+          <img src="./images/galeria1.jpeg" alt="">
+          <div class="icon">
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+        <a href="./images/galeria2.jpeg" class="box">
+          <img src="./images/galeria2.jpeg" alt="">
+          <div class="icon">
+            <i class="fa fa-plus"></i>
+
+          </div>
+        </a>
+        <a href="./images/galeria3.jpeg" class="box">
+          <img src="./images/galeria3.jpeg" alt="">
+          <div class="icon">
+            <i class="fa fa-plus"></i>
+
+          </div>
+        </a>
+        <a href="./images/galeria4.jpeg" class="box">
+          <img src="./images/galeria4.jpeg" alt="">
+          <div class="icon">
+            <i class="fa fa-plus"></i>
+
+          </div>
+        </a>
+        <a href="./images/galeria5.jpeg" class="box">
+          <img src="./images/galeria5.jpeg" alt="">
+          <div class="icon">
+            <i class="fa fa-plus"></i>
+
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="order" id="order">
+
+      <div class="heading">
+         <span>ordenar ahora</span>
+         <h3>servicio a domicilio</h3>
+      </div>
+   
+      <form action="">
+         <div class="box-container">
+            <div class="box">
+               <div class="inputBox">
+                  <span>Nombre completo</span>
+                  <input type="text" placeholder="ingrese su nombre">
+               </div>
+               <div class="inputBox">
+                  <span>qué pastel necesita</span>
+                  <input type="text" placeholder="ingrese el nombre de pastel">
+               </div>
+               <div class="inputBox">
+                  <span>detalles</span>
+                  <input type="text" placeholder="especifique los detalles de su orden">
+               </div>
+               <div class="inputBox">
+                  <span>your address</span>
+                  <textarea name="" placeholder="ingrese su dirección" id="" cols="30" rows="10"></textarea>
+               </div>
+            </div>
+            <div class="box">
+               <div class="inputBox">
+                  <span>numero</span>
+                  <input type="number" placeholder="ingresa tu numero">
+               </div>
+               <div class="inputBox">
+                  <span>cantidad de piezas</span>
+                  <input type="number" placeholder="ingrese el numero de productos">
+               </div>
+               <div class="inputBox">
+                  <span>cuando lo necesitas</span>
+                  <input type="datetime-local">
+               </div>
+               <div class="inputBox">
+                  <span>nuestra tienda</span>
+                  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481934.37921008124!2d-99.43282394007562!3d19.320931026822304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0036b1352927%3A0xdefd9e4ee8d18a5b!2sCd.%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1646272396094!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               </div>
+            </div>
+         </div>
+         <input type="submit" value="Ordenar Ahora" class="btn">
+      </form>
+      
+   </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+      lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
+  </body>
+</html>
